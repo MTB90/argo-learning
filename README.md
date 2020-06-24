@@ -7,11 +7,15 @@
 ## Argo architecture:
 
 ![alt text](https://argoproj.github.io/static/overview-afb23c68c9e6ba23a42bb8059c2dab30-f1931.jpeg)
-### Setup Argo on k8s using minikube:
+### Setup Argo on k8s using minikube commands:
 
 * Start minikube cluster:
     ```bash
     minikube start --driver=docker
+    ```
+* Cluster info:
+    ```bash
+    kubectl cluster-info
     ```
 * Then create a namespace for our Argo deployment:
     ```bash
@@ -29,4 +33,9 @@
 * Start minikube dashboard:
     ```bash
     minikube dashboard
+    ```
+### Setup Argo on k8s using minikube script:
+* Start using script:
+    ```bash
+    script/start.sh
     ```
